@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Bitcoin America</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/bitcoin.png" rel="icon">
+  <link href="assets/img/bitcoin.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+
+  
+  
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto">
+        <img src="assets/img/bitcoin.png" alt="">
+        <h1 class="sitename">BitcoinAmerica</h1>
+      </a>
+      
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html#hero" class="active">Home</a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#features">Features</a></li>
+          <li><a href="index.html#services">Services</a></li>
+          <li><a href="index.html#pricing">Pricing</a></li>
+          <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="#">Dropdown 1</a></li>
+              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="#">Deep Dropdown 1</a></li>
+                  <li><a href="#">Deep Dropdown 2</a></li>
+                  <li><a href="#">Deep Dropdown 3</a></li>
+                  <li><a href="#">Deep Dropdown 4</a></li>
+                  <li><a href="#">Deep Dropdown 5</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Dropdown 2</a></li>
+              <li><a href="#">Dropdown 3</a></li>
+              <li><a href="#">Dropdown 4</a></li>
+            </ul>
+          </li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <a class="btn-getstarted" href="register.html">Register</a>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section">
+      <div class="hero-bg">
+        <video autoplay muted loop playsinline class="hero-video">
+          <source src="videos/video.mp4" type="video/mp4">
+          
+        </video>
+      </div>
+      
+      <div class="container text-center">
+        <div class="d-flex flex-column justify-content-center align-items-center hero-content">
+          <h1 id="interactive-heading" data-aos="fade-up">Create Your Account</h1>
+          <p data-aos="fade-up" data-aos-delay="100">
+            Empower your investments with cutting-edge Bitcoin strategies and solutions.
+          </p>
+      
+          <!-- Registration Form Section -->
+          <div class="form-container" data-aos="fade-up" data-aos-delay="200">
+            <!-- Registration Form -->
+            <form action="register.php" method="post" class="registration-form">
+              <!-- Form Heading -->
+              <h2 class="form-heading">Registration</h2>
+              
+              <!-- Full Name Field -->
+              <div class="form-group">
+                <label for="full-name" class="form-label">Full Name</label>
+                <input type="text" id="full-name" name="full_name" class="form-control" placeholder="Enter full name" required>
+              </div>
+      
+              <!-- Email Address Field -->
+              <div class="form-group">
+                <label for="email" class="form-label">Email Address</label>
+                <input type="email" id="email" name="email" class="form-control" placeholder="Enter email" required>
+              </div>
+      
+              <!-- Password Field -->
+              <div class="form-group">
+                <label for="password" class="form-label">Password</label>
+                <input type="password" id="password" name="password" class="form-control" placeholder="Password" required>
+              </div>
+      
+              <!-- Confirm Password Field -->
+              <div class="form-group">
+                <label for="confirm-password" class="form-label">Confirm Password</label>
+                <input type="password" id="confirm-password" name="confirm_password" class="form-control" placeholder="Confirm Password" required>
+              </div>
+      
+              <!-- Country Selector Field -->
+              <div class="form-group">
+                <label for="country" class="form-label">Country</label>
+                <select id="country" name="country" class="form-select" required>
+                  <!-- Options will be dynamically generated by JavaScript -->
+                </select>
+              </div>
+      
+              <!-- Referral Field -->
+              <div class="form-group">
+                <label for="referral" class="form-label">Referral</label>
+                <input type="text" id="referral" name="referral" class="form-control" placeholder="Enter referral Id (Optional)">
+              </div>
+      
+              <!-- Terms and Conditions Checkbox -->
+              <div class="form-group form-check text-center">
+                <div class="checkbox-container">
+                  <input type="checkbox" id="terms" name="terms" class="form-check-input" required>
+                  <label for="terms" class="form-check-label">I have read and agree to the <a href="terms.html" class="terms-link" target="_blank">Terms & Conditions</a></label>
+                </div>
+              </div>
+      
+              <!-- Submit Button -->
+              <button type="submit" class="btn btn-primary">Register</button>
+      
+              <!-- Login Link -->
+              <div class="mt-4">
+                <p>Already have an account? <a href="login.html" class="login-link">Login here</a></p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      
+      <style>
+        
+      </style>
+      
+      <script>
+        document.addEventListener('DOMContentLoaded', function () {
+          const countrySelect = document.getElementById('country');
+          const countries = [
+            'United States', 'Canada', 'United Kingdom', 'Australia', 'Germany',
+            'France', 'Italy', 'Spain', 'Netherlands', 'Brazil', 'India', 'China',
+            'Japan', 'South Korea', 'Mexico', 'Russia', 'South Africa', 'Saudi Arabia',
+            'Turkey', 'Switzerland', 'Sweden', 'New Zealand'
+            // Add more countries as needed
+          ];
+      
+          countries.forEach(country => {
+            const option = document.createElement('option');
+            option.value = country;
+            option.textContent = country;
+            countrySelect.appendChild(option);
+          });
+        });
+      </script>
+      
+       
+    </section><!-- /Hero Section -->
+
+    <!-- Featured Services Section -->
+  
+
+<footer id="footer" class="footer position-relative light-background">
+
+  <div class="container footer-top">
+    <div class="row gy-4">
+      <div class="col-lg-4 col-md-6 footer-about">
+        <a href="index.html" class="logo d-flex align-items-center">
+          <span class="sitename">QuickStart</span>
+        </a>
+        <div class="footer-contact pt-3">
+          <p>Your Company Address</p>
+          <p>City, Country</p>
+          <p class="mt-3"><strong>Phone:</strong> <span>+1 234 567 8900</span></p>
+          <p><strong>Email:</strong> <span>support@yourcompany.com</span></p>
+        </div>
+        <div class="social-links d-flex mt-4">
+          <a href="https://twitter.com/yourcompany" target="_blank"><i class="bi bi-twitter"></i></a>
+          <a href="https://facebook.com/yourcompany" target="_blank"><i class="bi bi-facebook"></i></a>
+          <a href="https://instagram.com/yourcompany" target="_blank"><i class="bi bi-instagram"></i></a>
+          <a href="https://linkedin.com/company/yourcompany" target="_blank"><i class="bi bi-linkedin"></i></a>
+        </div>
+      </div>
+
+      <div class="col-lg-2 col-md-3 footer-links">
+        <h4>Useful Links</h4>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Terms of Service</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+      </div>
+
+      <div class="col-lg-2 col-md-3 footer-links">
+        <h4>Our Services</h4>
+        <ul>
+          <li><a href="#">Investment Plans</a></li>
+          <li><a href="#">Trading Tools</a></li>
+          <li><a href="#">Portfolio Management</a></li>
+          <li><a href="#">Market Insights</a></li>
+          <li><a href="#">Customer Support</a></li>
+        </ul>
+      </div>
+
+      <div class="col-lg-4 col-md-12 footer-newsletter">
+        <h4>Our Newsletter</h4>
+        <p>Subscribe to our newsletter for the latest updates and insights on Bitcoin investment opportunities!</p>
+        <form action="forms/newsletter.php" method="post" class="php-email-form">
+          <div class="newsletter-form"><input type="email" name="email" placeholder="Your Email"><input type="submit" value="Subscribe"></div>
+          <div class="loading">Loading</div>
+          <div class="error-message"></div>
+          <div class="sent-message">Your subscription request has been sent. Thank you!</div>
+        </form>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="container copyright text-center mt-4">
+    <p>© <span>Copyright</span> <strong class="px-1 sitename">BitcoinAmerica</strong><span>All Rights Reserved</span></p>
+    <div class="credits">
+      Designed by <a href="https://bootstrapmade.com/">Thegreattech</a>
+    </div>
+  </div>
+
+</footer>
+
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+  
+</body>
+
+</html>
